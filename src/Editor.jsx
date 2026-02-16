@@ -16,7 +16,13 @@ function Editor({ onChange, onReady }) {
   const config = useMemo(() => {
     return {
       licenseKey: "GPL",
-      plugins: [Essentials, Paragraph, GeneralHtmlSupport, Table],
+      plugins: [
+        Essentials,
+        Paragraph,
+        GeneralHtmlSupport,
+        Table,
+        TableProperties,
+      ],
       initialData: `
         <div style="background: linear-gradient(90deg,rgba(161, 29, 125, 0.55) 0%, rgba(24, 33, 104, 0.75) 100%); padding: 2em;">Liniar gradient.</div>
       `,
